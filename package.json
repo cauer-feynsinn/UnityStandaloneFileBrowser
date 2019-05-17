@@ -1,0 +1,9 @@
+{
+	"name": "org.gkngkc.unitystandalonefilebrowser",
+	"displayName":"Unity Standalone File Browser",
+	"version": "1.2.0",
+	"unity": "2018.3",
+	"description": "A simple wrapper for native file dialogs on Windows/Mac/Linux.",
+	"dependencies": {
+	}
+}
