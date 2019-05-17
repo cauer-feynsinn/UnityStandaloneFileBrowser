@@ -10,7 +10,17 @@ A simple wrapper for native file dialogs on Windows/Mac/Linux.
 - Linux support by [Ricardo Rodrigues](https://github.com/RicardoEPRodrigues).
 - Basic WebGL support.
 
-[Download Package](https://github.com/gkngkc/UnityStandaloneFileBrowser/releases/download/1.2/StandaloneFileBrowser.unitypackage)
+Add the following to your ``Packages/manifest.json`` to use the package:
+
+```json
+{
+  "dependencies": {
+		...
+    "org.gkngkc.unitystandalonefilebrowser": "https://github.com/cauer-feynsinn/UnityStandaloneFileBrowser",
+		...
+	}
+}
+```
 
 Example usage:
 
@@ -45,13 +55,13 @@ var path = StandaloneFileBrowser.SaveFilePanel("Save File", "", "MySaveFile", ex
 See Sample/BasicSampleScene.unity for more detailed examples.
 
 Mac Screenshot
-![Alt text](/Images/sfb_mac.jpg?raw=true "Mac")
+![Alt text](/.Images/sfb_mac.jpg?raw=true "Mac")
 
 Windows Screenshot
-![Alt text](/Images/sfb_win.jpg?raw=true "Win")
+![Alt text](/.Images/sfb_win.jpg?raw=true "Win")
 
 Linux Screenshot
-![Alt text](/Images/sfb_linux.jpg?raw=true "Win")
+![Alt text](/.Images/sfb_linux.jpg?raw=true "Win")
 
 Notes:
 - Windows
@@ -59,7 +69,7 @@ Notes:
     * Async dialog opening not implemented, ..Async methods simply calls regular sync methods.
     * Plugin import settings should be like this;
     
-    ![Alt text](/Images/win_import_1.jpg?raw=true "Plugin Import Ookii") ![Alt text](/Images/win_import_2.jpg?raw=true "Plugin Import System.Forms")
+    ![Alt text](/.Images/win_import_1.jpg?raw=true "Plugin Import Ookii") ![Alt text](/.Images/win_import_2.jpg?raw=true "Plugin Import System.Forms")
     
 - Mac
     * Sync calls are throws an exception at development build after native panel loses and gains focus. Use async calls to avoid this.
